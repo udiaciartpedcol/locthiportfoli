@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+.coiny-regular {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bevan-regular {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bevan-regular-italic {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+section{width: 100%; min-height: 100px}
+.green{color: #00ff00}
+.bggreen{background-color: rgba(0, 255, 0, 0.6)!important}
+.lightgreen{color: #0DAF0D}
+.purple{color: #8800CA}
+.bgpurple{background-color: rgba(136, 0, 202, 1)!important}
+.bggray{background-color: rgba(188,188,188,0.6)!important}
+.marginb10{margin-bottom: 10px}
+.navbar .nav .nav-item .nav-link{color: #00ff00;transition: transform .4s}
+.navbar .nav .nav-item .nav-link:active {background-color: #8800CA!important }
+.navbar .nav .nav-item .nav-link:hover {background-color: #8800CA!important; transform: scale(1.1)}
+.nut{color: #8800CA; border-radius: 10px; background-color: black; transition: .3s; border: #8800ca solid }
+.nut:hover{background-color: #8800CA; color:#00ff00}
+.titlebox{background-color: #8800CA; border: solid 5px #00ff00; padding: 10px; border-radius: 35px;}
+.menubutton{background-color: #8800CA; color: #00ff00; border-radius: 50px}
+.nav .nav-item .nav-link:active{background-color: #8800CA!important}
+.nav .nav-item .nav-link:hover{background-color: #8800CA!important}
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #8800CA;
+  left: 25px;
+  margin-right: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: calc( 100% - 75px );
+  float: right;
+  border: 2px solid #8800CA;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  left: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #ccc;
+  border-left: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  left: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-right: 14px solid #fff;
+  border-left: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  margin-right: -25px;
+  background-color: #999999;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: left;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-right-width: 0;
+  border-left-width: 15px;
+  right: -15px;
+  left: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-right-width: 0;
+  border-left-width: 14px;
+  right: -14px;
+  left: auto;
+}
+.timeline-badge.primary {
+  background-color: #00ff00 !important;
+}
+.timeline-badge.success {
+  background-color: #00CE00 !important;
+}
+.timeline-badge.warning {
+  background-color: #009300 !important;
+}
+.timeline-badge.danger {
+  background-color: #006600 !important;
+}
+.timeline-badge.info {
+  background-color: #5bc0de !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+.timeline-body {
+    display: none;
+}
